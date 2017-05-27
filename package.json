@@ -1,0 +1,18 @@
+{
+  "name": "vue-wwx",
+  "version": "0.0.1",
+  "description": "A collection of my vue utils",
+  "author": {
+    "name": "wuweixing",
+    "email": "wwx_2012@hotmail.com"
+  },
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sqlwwx/vue-wwx.git"
+  },
+  "dependencies": {
+    "jsoneditor": "^5.5.8",
+    "store": "^1.3.20"
+  }
+}
