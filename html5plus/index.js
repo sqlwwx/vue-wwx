@@ -14,5 +14,10 @@ export default {
         return Promise.resolve(plus.nativeUI.toast(title, options))
       })
     }
+    Vue.prototype.$showWaiting = function (title, options = {}) {
+      return this.$plus.then(plus => {
+        return Promise.resolve(plus.nativeUI.showWaiting(title, options))
+      })
+    }
   }
 }
