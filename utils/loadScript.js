@@ -1,6 +1,12 @@
 let loadHistory = {}
 
-export default (url) => {
+export const loadScripts = (urls) => {
+  return Promise.map(urls, (url) => {
+    return loadScript(url)
+  })
+}
+
+const loadScript = (url) => {
   if (loadHistory[url]) {
     return loadHistory[url]
   } else {
@@ -30,3 +36,5 @@ export default (url) => {
     return promise
   }
 }
+
+export default loadScript
